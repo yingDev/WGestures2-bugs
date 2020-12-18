@@ -5,4 +5,6 @@
 欢迎 [创建 Issue](https://github.com/yingDev/WGestures2-mac-bugs/issues/new). 我会尽量反馈和解决. 
 
 
+
+<br><br>
 [YingDev.com](https://www.yingdev.com/projects/wgestures2)
