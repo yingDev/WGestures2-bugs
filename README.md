@@ -1,4 +1,4 @@
-# WGestures2-mac-bugs
+# WGestures2 Bugs 🐛
 
 在使用 [WGestures 2](https://www.yingdev.com/projects/wgestures2) 过程中
 - `遇到问题`?
