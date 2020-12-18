@@ -1,6 +1,6 @@
 # WGestures2-mac-bugs
 
-在使用 [WGestures 2](https://www.yingdev.com/projects/wgestures2) 2 过程中
+在使用 [WGestures 2](https://www.yingdev.com/projects/wgestures2) 过程中
 - `遇到问题`?
 - 或者有好的`功能建议`?
 
