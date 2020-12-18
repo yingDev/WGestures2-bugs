@@ -5,6 +5,7 @@
 - 或者有好的`功能建议`?
 
 欢迎 [创建 Issue](https://github.com/yingDev/WGestures2-mac-bugs/issues/new). <br>
+不是 Github 用户? 发送邮件至 [me@yingdev.com](mailto:me@yingdev.com) .
 我会尽量提供帮助和解决问题. 
 
 
