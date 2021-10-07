@@ -11,7 +11,13 @@ WG2 按键序列可以模拟右键点击, 结合延迟时间, 可以容易地实
 1. 选择 "按键序列", 编辑代码 `+{MOUSE_RIGHT}{SLEEP 50}aa{ENTER}`. (注意： 两次 a 是因为我的电脑上有 Rar，第二次才会选中 “复制为路径” 菜单项, 根据你的实际情况做出调整）
 
 ### 打开文件/程序/网址
-WG2 支持 Cmd 脚本 和 Lua 脚本, 都可以用于打开文件/程序等. 以下是用 Lua 脚本实现打开 yingdev.com:
+WG2 支持 Cmd 脚本 和 Lua 脚本, 都可以用于打开文件/程序等:
+* Cmd 脚本实现
+```bat
+explorer "https://yingdev.com" 
+REM 或者打开文件 "C:\Windows\notepad.exe"
+```
+* Lua 脚本实现
 ```lua
 function wgAction(pos,wid,pid,exe,title,mode)
   WG.Open("https://yingdev.com")
