@@ -25,6 +25,29 @@ function wgAction(pos,wid,pid,exe,title,mode)
 end
 ```
 
+### 使用自定义的 浏览器和搜索引擎 搜索内容
+使用 Lua 脚本:
+```lua
+function wgAction(pos,wid,pid,exe,title,mode)
+  WG.SendKeys('^c')
+  WG.Sleep(100)
+  local txt = WG.GetClipboardText()
+ 
+  -- 浏览器
+  local chrome = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+  local edge = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+  local firefox = "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+  
+  -- 搜索引擎
+  local baidu = 'https://baidu.com/s?wd='
+  local google = 'https://google.com/search?q='
+  local bing = 'https://bing.com/search?q='
+  
+  -- 替换下方的变量来使用其它组合
+  WG.Run(edge, bing..txt)
+end
+```
+
 ### 调整显示器亮度
 WG2 提供了 Lua 接口 `WG.SetBrightness(pos, percent_or_delta, isDelta)`。 注意：并非所有显示其都支持通过软件控制亮度。
 * `pos` 点坐标，用于确定 “包含该点的那个显示器”，对于 WG2 而言，基本上就是手势起点坐标
